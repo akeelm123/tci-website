@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 760" role="img" aria-labelledby="title desc">
+  <title id="title">Transformation Confidence Index compass</title>
+  <desc id="desc">Concentric circles and four evidence points around a central TCI mark.</desc>
+  <rect width="760" height="760" rx="380" fill="#102531"/>
+  <circle cx="380" cy="380" r="300" fill="none" stroke="#9dd6cb" stroke-opacity=".35" stroke-width="2"/>
+  <circle cx="380" cy="380" r="210" fill="none" stroke="#9dd6cb" stroke-opacity=".25" stroke-width="2"/>
+  <circle cx="380" cy="380" r="105" fill="#9dd6cb"/>
+  <path d="M380 66v628M66 380h628" stroke="#fffdf8" stroke-opacity=".15" stroke-width="2"/>
+  <path d="M160 160l440 440M600 160L160 600" stroke="#fffdf8" stroke-opacity=".1" stroke-width="2"/>
+  <circle cx="380" cy="80" r="14" fill="#dc725b"/>
+  <circle cx="680" cy="380" r="14" fill="#c89d4a"/>
+  <circle cx="380" cy="680" r="14" fill="#9dd6cb"/>
+  <circle cx="80" cy="380" r="14" fill="#dc725b"/>
+  <text x="380" y="366" text-anchor="middle" fill="#102531" font-family="Georgia, serif" font-size="60">TCI</text>
+  <text x="380" y="414" text-anchor="middle" fill="#102531" font-family="Arial, sans-serif" font-size="19" letter-spacing="5">CONFIDENCE</text>
+</svg>
+
