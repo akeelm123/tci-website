@@ -2,6 +2,8 @@ const navToggle = document.querySelector('.nav-toggle');
 const siteNav = document.querySelector('.site-nav');
 
 if (navToggle && siteNav) {
+  siteNav.id = 'site-navigation';
+  navToggle.setAttribute('aria-controls', siteNav.id);
   navToggle.addEventListener('click', () => {
     const open = siteNav.classList.toggle('open');
     navToggle.setAttribute('aria-expanded', String(open));
@@ -33,6 +35,16 @@ document.querySelectorAll('[data-year]').forEach((node) => {
 
 document.querySelectorAll('.reveal').forEach((node) => node.classList.add('visible'));
 
+const comparisonToggle = document.querySelector('[data-comparison-toggle]');
+if (comparisonToggle) {
+  comparisonToggle.addEventListener('click', () => {
+    const matrix = document.querySelector('#status-confidence-matrix');
+    const expanded = matrix.classList.toggle('show-all');
+    comparisonToggle.setAttribute('aria-expanded', String(expanded));
+    comparisonToggle.textContent = expanded ? 'Show fewer comparisons' : 'Show all comparisons';
+  });
+}
+
 document.querySelectorAll('input[type="range"]').forEach((range) => {
   const value = document.querySelector(`[data-range-value="${range.id}"]`);
   const update = () => { if (value) value.textContent = range.value; };
@@ -44,30 +56,69 @@ const pulseForm = document.querySelector('[data-pulse-form]');
 if (pulseForm) {
   pulseForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    const values = [...pulseForm.querySelectorAll('input[type="range"]')].map((input) => Number(input.value));
-    const total = values.reduce((sum, value) => sum + value, 0);
     const result = pulseForm.querySelector('[data-pulse-result]');
-    const score = result.querySelector('[data-pulse-score]');
-    const copy = result.querySelector('[data-pulse-copy]');
-    score.textContent = `${total}/20`;
-    copy.textContent = total >= 17
-      ? 'Your answers indicate strong executive confidence. The full assessment will help test whether the evidence supports this view.'
-      : total >= 12
-        ? 'Your answers indicate conditional confidence. The full assessment will help locate the assumptions and evidence gaps.'
-        : 'Your answers indicate fragile confidence. Start with the full assessment to identify the most urgent leadership questions.';
+    result.querySelector('[data-pulse-score]').textContent = 'Discuss the evidence behind your ratings';
+    result.querySelector('[data-pulse-copy]').textContent = 'These ratings start a discussion. Compare the evidence behind each answer; they are not a formal TCI™ assessment or validated confidence score.';
     result.classList.add('show');
-    result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    result.focus({ preventScroll: true });
+    result.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'nearest' });
   });
 }
 
-document.querySelectorAll('[data-preview-form]').forEach((form) => {
-  form.addEventListener('submit', (event) => {
+const serviceContext = document.querySelector('[data-service-context]');
+if (serviceContext) {
+  const serviceNames = {
+    'transformation-assessment': 'Transformation Confidence Assessment',
+    'ai-review': 'AI Investment Confidence Review',
+    'board-review': 'Independent Board Transformation Review',
+    'executive-advisory': 'Executive Transformation Advisory',
+    speaking: 'Speaking or executive session'
+  };
+  const selected = serviceNames[new URLSearchParams(window.location.search).get('service')];
+  if (selected) {
+    serviceContext.textContent = `Your enquiry is about ${selected}. This selection is included in the email draft.`;
+    serviceContext.hidden = false;
+    const serviceSelect = document.querySelector('#contact-service');
+    if (serviceSelect) serviceSelect.value = selected;
+  }
+}
+
+const contactForm = document.querySelector('[data-contact-form]');
+if (contactForm) {
+  contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    const status = form.querySelector('.form-status');
-    if (status) {
-      status.textContent = 'Thanks. This preview keeps your details on this device. Connect your preferred email or form service before publishing.';
-      status.classList.add('show');
-    }
-    form.reset();
+    if (!contactForm.reportValidity()) return;
+    const fields = new FormData(contactForm);
+    const subject = `Akeel Advisory enquiry: ${fields.get('service')}`;
+    const body = [
+      `Name: ${fields.get('name')}`,
+      `Reply email: ${fields.get('email')}`,
+      `Decision or service: ${fields.get('service')}`,
+      `Timing: ${fields.get('timing') || 'Not specified'}`,
+      '',
+      String(fields.get('message')).trim()
+    ].join('\n');
+    const draft = `mailto:akeelm@duck.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const status = contactForm.querySelector('[data-contact-status]');
+    status.textContent = 'Your email app should open with a draft. Review and send it there. If it does not open, use this link or copy akeelm@duck.com: ';
+    const draftLink = document.createElement('a');
+    draftLink.href = draft;
+    draftLink.textContent = 'Open the prepared draft';
+    status.appendChild(draftLink);
+    status.classList.add('show');
+    draftLink.click();
   });
-});
+}
+
+const copyEmail = document.querySelector('[data-copy-email]');
+if (copyEmail) {
+  copyEmail.addEventListener('click', async () => {
+    const status = document.querySelector('[data-copy-feedback]');
+    try {
+      await navigator.clipboard.writeText('akeelm@duck.com');
+      status.textContent = 'Email address copied.';
+    } catch {
+      status.textContent = 'Copy akeelm@duck.com from the link above.';
+    }
+  });
+}
