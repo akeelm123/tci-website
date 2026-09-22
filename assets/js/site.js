@@ -68,10 +68,11 @@ if (pulseForm) {
 const serviceContext = document.querySelector('[data-service-context]');
 if (serviceContext) {
   const serviceNames = {
-    'transformation-assessment': 'Transformation Confidence Assessment',
-    'ai-review': 'AI Investment Confidence Review',
-    'board-review': 'Independent Board Transformation Review',
-    'executive-advisory': 'Executive Transformation Advisory',
+    'tci-self-assessment': 'TCI™ Self-Assessment',
+    'executive-diagnostic': 'TCI™ Executive Diagnostic',
+    'ai-review': 'AI Investment Confidence Review™',
+    'transformation-assessment': 'Transformation Confidence Assessment™',
+    'executive-conversation': 'Transformation Confidence Executive Conversation',
     speaking: 'Speaking or executive session'
   };
   const selected = serviceNames[new URLSearchParams(window.location.search).get('service')];
@@ -82,6 +83,13 @@ if (serviceContext) {
     if (serviceSelect) serviceSelect.value = selected;
   }
 }
+
+const openServiceDeepLink = () => {
+  const target = document.querySelector('.service-tab:target');
+  if (target) target.open = true;
+};
+window.addEventListener('load', openServiceDeepLink);
+window.addEventListener('hashchange', openServiceDeepLink);
 
 const contactForm = document.querySelector('[data-contact-form]');
 if (contactForm) {
@@ -100,7 +108,7 @@ if (contactForm) {
     ].join('\n');
     const draft = `mailto:akeelm@duck.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     const status = contactForm.querySelector('[data-contact-status]');
-    status.textContent = 'Your email app should open with a draft. Review and send it there. If it does not open, use this link or copy akeelm@duck.com: ';
+    status.textContent = 'Your email app should open with a draft. Review and send it there. If it does not open, use this link or the direct email link above: ';
     const draftLink = document.createElement('a');
     draftLink.href = draft;
     draftLink.textContent = 'Open the prepared draft';
@@ -118,7 +126,7 @@ if (copyEmail) {
       await navigator.clipboard.writeText('akeelm@duck.com');
       status.textContent = 'Email address copied.';
     } catch {
-      status.textContent = 'Copy akeelm@duck.com from the link above.';
+      status.textContent = 'Your browser blocked copying. Use the Mailto:Akeel-Advisory link above.';
     }
   });
 }

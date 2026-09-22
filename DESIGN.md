@@ -30,9 +30,9 @@ Content remains visible by default. Hover movement is restrained and reduced-mot
 
 Desktop pages use editorial splits and wide evidence fields. Below 1020px navigation becomes a full-width, keyboard-dismissable menu. Below 760px grids become one column and page gutters reduce to 16px. At the tablet breakpoint, the Home evidence dial and all seven labels must remain readable without clipping. On narrow phones, the comparison should preserve its core argument without delaying the route to a service.
 
-## Implemented refinements awaiting visual approval
+## Previous site refinements
 
-The baseline evidence and page-by-page recommendations are in [SITE-AUDIT-2026-09-22.md](SITE-AUDIT-2026-09-22.md). The changes below are implemented in the local working copy for visual review. They have not been committed or deployed.
+The baseline evidence and page-by-page recommendations are in [SITE-AUDIT-2026-09-22.md](SITE-AUDIT-2026-09-22.md). The changes below were implemented in the previous site release.
 
 1. **Proof before polish:** Show verifiable founder experience and a clearly marked sample evidence artifact. Keep fictional scenarios distinct from client work; replace their numeric confidence scores and bands with qualitative decision evidence.
 2. **One clear job per page:** Home frames the investment decision; Services distinguishes buyer, trigger and output; TCI shows the evidence-to-judgement path; Resources separates available from planned material; Contact completes a dependable enquiry handoff.
@@ -66,3 +66,13 @@ The table records the change brief and the checks that still matter. The verifie
 - All 14 pages have a canonical URL and OG/Twitter image metadata. `sitemap.xml`, `robots.txt` and the branded sharing image return 200 locally. The canonical origin is the currently supplied `https://akeel-advisory.vercel.app`; review it if a custom domain is chosen.
 - The 12 responsive WebP newsletter thumbnails total **281,714 bytes** across both size variants, below the 1 MB target. The original cover files remain as source assets.
 - Axe found no WCAG A/AA violations in its initial-state scan of all 14 pages. This is an automated result, not a conformance claim. Four sampled mobile Lighthouse runs scored 100 for performance, accessibility, best practices and SEO; Newsletter transfer fell from about 6.8 MiB to 232 KiB in those local lab runs. Real-user INP and production performance remain unmeasured.
+
+## Services and logo update
+
+- The Services page now follows the four-offering architecture in `service-offering.md`: TCI™ Self-Assessment, TCI™ Executive Diagnostic, AI Investment Confidence Review™ and Transformation Confidence Assessment™. The free executive conversation is a route to choosing an offering, not a fifth paid assessment.
+- Each offering appears as a compact `details`/`summary` row. The default view shows only title and short summary. Native keyboard interaction opens and closes details; direct links from Home and TCI open the relevant row on arrival. The expanded text describes purpose, method, evidence, audience, output and decision role using the updated product architecture.
+- The seven-dimension TCI™ Self-Assessment described in the new architecture is distinct from the website's existing five-theme introductory PDF. The page names that difference and routes enquiries to Contact; it does not present the existing PDF as the new offering.
+- The supplied Akeel Advisory PNG is retained as the source logo. Its emblem is displayed in the header beside the existing readable firm name and descriptor, replacing the previous CSS-drawn mark on all pages. The source image is decoratively cropped in CSS and has empty alt text because the adjacent name labels the home link.
+- Home service previews and Contact service choices now match the four offerings. Existing TCI links to the full assessment and AI review still resolve.
+- The visible direct-email label is **Mailto:Akeel-Advisory** in the Contact page and all footers. The underlying `mailto:` target, prepared draft recipient and copy-email control still use the verified business inbox.
+- Visual acceptance checked the collapsed and expanded Services page at desktop, tablet and phone widths, the logo crop, keyboard toggles, direct links and Contact preselection. The user approved committing and deploying this update.
