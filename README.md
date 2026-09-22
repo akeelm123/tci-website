@@ -1,6 +1,6 @@
-# Transformation Confidence Index website
+# Akeel Advisory website
 
-A polished static website for Akeel Munshi and the Transformation Confidence Index™.
+A static website for Akeel Advisory. The Transformation Confidence Index™ is its advisory method.
 
 ## Preview
 
@@ -25,10 +25,9 @@ Then visit `http://localhost:8080`.
 
 ## Before publishing
 
-1. Add the preferred contact email and social profile links.
-2. Connect the contact and newsletter forms to the chosen service.
-3. Confirm the final domain, analytics and privacy wording.
-4. Replace preview newsletter cards with published editions when ready.
+1. Confirm the public domain used in canonical URLs, social metadata, `robots.txt` and `sitemap.xml`.
+2. The Contact page opens an email draft addressed to `akeelm@duck.com`; it does not submit data through the website. Add a server-side form service only if in-site submission is required.
+3. Confirm analytics and privacy wording before launch.
+4. Review the current published newsletter links and thumbnails.
 
 The site uses plain HTML, CSS and JavaScript. No build step or third-party framework is required.
-

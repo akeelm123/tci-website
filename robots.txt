@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://akeel-advisory.vercel.app/sitemap.xml
