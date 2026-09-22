@@ -373,6 +373,7 @@ h3 { font-size: 21px; line-height: 1.25; margin-bottom: 12px; }
   background: var(--white);
 }
 .card-number { display: block; margin-bottom: 45px; color: #78510a; font: 500 42px/1 Baskerville, Georgia, serif; }
+.resource-kicker { margin-bottom: 31px; font: 800 13px/1.4 "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif; letter-spacing: .12em; }
 .card p:last-child { margin-bottom: 0; }
 .card-link { display: inline-flex; gap: 8px; margin-top: 18px; color: var(--teal-deep); font-size: 13px; font-weight: 750; }
 .card-dark { color: var(--white); background: var(--ink); border-color: transparent; }
