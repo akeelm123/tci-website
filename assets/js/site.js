@@ -2,31 +2,35 @@ const navToggle = document.querySelector('.nav-toggle');
 const siteNav = document.querySelector('.site-nav');
 
 if (navToggle && siteNav) {
-  siteNav.id = 'site-navigation';
-  navToggle.setAttribute('aria-controls', siteNav.id);
-  navToggle.addEventListener('click', () => {
-    const open = siteNav.classList.toggle('open');
+  const background = [...document.querySelectorAll('main, .site-footer, .skip-link, .brand')];
+  const mobile = window.matchMedia('(max-width: 1180px)');
+  const setMenu = (open, restoreFocus = false) => {
+    siteNav.classList.toggle('open', open);
     navToggle.setAttribute('aria-expanded', String(open));
     navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     document.body.classList.toggle('menu-open', open);
+    background.forEach(node => { node.inert = open; });
+    if (restoreFocus) navToggle.focus();
+  };
+  siteNav.id = 'site-navigation';
+  navToggle.setAttribute('aria-controls', siteNav.id);
+  navToggle.addEventListener('click', () => setMenu(!siteNav.classList.contains('open')));
+  siteNav.addEventListener('click', event => {
+    if (event.target.closest('a')) setMenu(false);
   });
-
-  siteNav.addEventListener('click', (event) => {
-    if (!event.target.closest('a')) return;
-    siteNav.classList.remove('open');
-    navToggle.setAttribute('aria-expanded', 'false');
-    navToggle.setAttribute('aria-label', 'Open menu');
-    document.body.classList.remove('menu-open');
+  document.addEventListener('keydown', event => {
+    if (!siteNav.classList.contains('open')) return;
+    if (event.key === 'Escape') { setMenu(false, true); return; }
+    if (event.key !== 'Tab') return;
+    const links = [...siteNav.querySelectorAll('a[href]')];
+    const last = links[links.length - 1];
+    if (event.shiftKey && document.activeElement === navToggle) {
+      event.preventDefault(); last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault(); navToggle.focus();
+    }
   });
-
-  document.addEventListener('keydown', (event) => {
-    if (event.key !== 'Escape' || !siteNav.classList.contains('open')) return;
-    siteNav.classList.remove('open');
-    navToggle.setAttribute('aria-expanded', 'false');
-    navToggle.setAttribute('aria-label', 'Open menu');
-    document.body.classList.remove('menu-open');
-    navToggle.focus();
-  });
+  mobile.addEventListener('change', () => setMenu(false));
 }
 
 document.querySelectorAll('[data-year]').forEach((node) => {
@@ -126,7 +130,7 @@ if (copyEmail) {
       await navigator.clipboard.writeText('akeelm@duck.com');
       status.textContent = 'Email address copied.';
     } catch {
-      status.textContent = 'Your browser blocked copying. Use the Mailto:Akeel-Advisory link above.';
+      status.textContent = 'Your browser blocked copying. Use the Email Akeel link above.';
     }
   });
 }
