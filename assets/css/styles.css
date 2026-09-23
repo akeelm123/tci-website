@@ -592,3 +592,43 @@ input[type="range"] { width: 100%; accent-color: var(--teal); }
   .advisory-hero .btn-row { margin-top: 20px; }
   .advisory-hero .hero-note { display: none; }
 }
+
+/* Services: decision comparison and evidence fields. */
+#offerings { scroll-margin-top: 100px; }
+.service-finder-intro, .service-relationship-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .65fr); gap: 48px; align-items: end; margin-bottom: 32px; }
+.service-finder-intro p, .service-relationship-intro p { max-width: 58ch; }
+.service-comparison { border-top: 1px solid var(--line); }
+.service-comparison-row { display: grid; grid-template-columns: .65fr 1.8fr 1fr .9fr; gap: 24px; align-items: start; padding: 25px 16px; border-bottom: 1px solid var(--line); font-size: 15px; }
+.service-comparison-row:hover { background: var(--white); }
+.service-comparison-row:focus-visible { outline: 3px solid #78510a; outline-offset: -3px; }
+.service-comparison-row strong, .service-comparison-row small { display: block; }
+.service-comparison-row strong { font-size: 19px; line-height: 1.35; margin-bottom: 8px; }
+.service-comparison-row small { font-size: 16px; color: var(--ink-soft); }
+.service-comparison-level, .service-tab-meta { color: #78510a; font-size: 14px; font-weight: 700; }
+.service-comparison-note { color: var(--ink-soft); font-size: 15px; }
+.service-tab-flagship { border-left: 3px solid var(--gold); }
+.service-tab-grid p + p { margin-top: 14px; }
+.service-tab-grid h3 { font-size: 14px; }
+.service-path { display: grid; grid-template-columns: 1fr 1fr 2fr; gap: 32px; margin-top: 48px; }
+.service-path > div, .service-path-branch > div { border-top: 1px solid var(--aqua); padding-top: 18px; }
+.service-path span, .service-path strong { display: block; }
+.service-path span { color: var(--aqua); font-size: 15px; margin-bottom: 8px; }
+.service-path strong { font-family: Baskerville, Georgia, serif; font-weight: 500; font-size: 28px; line-height: 1.2; }
+.service-path .service-path-branch { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; padding: 0; border: 0; }
+.evidence-classes { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; margin-top: 40px; }
+.evidence-classes > div { border-top: 1px solid var(--line); padding-top: 18px; }
+.evidence-classes strong, .evidence-classes span { display: block; }
+.evidence-classes span { color: var(--ink-soft); font-size: 16px; }
+@media (max-width: 1020px) {
+  .service-comparison-row { grid-template-columns: .7fr 1.6fr 1fr; }
+  .service-comparison-row > span:last-child { grid-column: 2 / -1; }
+  .service-path { grid-template-columns: 1fr 1fr; }
+  .service-path-branch { grid-column: 1 / -1; }
+}
+@media (max-width: 760px) {
+  .service-finder-intro, .service-relationship-intro { grid-template-columns: 1fr; gap: 8px; }
+  .service-comparison-row { grid-template-columns: 1fr; gap: 10px; padding-inline: 0; }
+  .service-comparison-row > span:nth-child(n+3) { display: none; }
+  .service-path, .service-path .service-path-branch, .evidence-classes { grid-template-columns: 1fr; }
+  .service-path-branch { grid-column: auto; }
+}
