@@ -1,6 +1,12 @@
 {
   "headers": [
     {
+      "source": "/assets/images/akeel-advisory-logo.7d26c1a4.svg",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
       "source": "/(.*).html",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
