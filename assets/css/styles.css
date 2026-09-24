@@ -78,7 +78,7 @@ button, input, textarea, select { font: inherit; }
 }
 
 .brand-mark { display: flex; align-items: center; justify-content: center; width: 58px; height: 40px; flex: 0 0 58px; }
-.brand-mark svg { width: 40px; height: 40px; display: block; fill: currentColor; }
+.brand-mark img { width: 40px; height: 40px; display: block; }
 .brand-copy { line-height: 1.1; }
 .brand-copy strong { display: block; font-size: 16px; letter-spacing: 0.04em; }
 .brand-copy small { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-soft); }
