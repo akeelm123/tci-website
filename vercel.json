@@ -1,0 +1,16 @@
+{
+  "headers": [
+    {
+      "source": "/assets/images/akeel-advisory-mark.ee4b6816.svg",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/(.*).html",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    }
+  ]
+}
