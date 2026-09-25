@@ -108,3 +108,14 @@ The Resources page replaces the planned **Guide** tile with **Technology readine
 | No action | **Library weight:** no unnecessary third-party libraries were detected in the site bundle. | Keep the static HTML/CSS/JS approach for this scope. | Dependency count stays unchanged unless a new interaction truly requires one. |
 
 The Team's Editor challenged offer hierarchy, founder proof placement and status readability; the Fact-checker corrected stale audit assumptions about numeric scenario scores and missing metadata; the Writer recommended giving available resources priority over planned cards. The audit distinguishes current live behavior from earlier audit findings and from the local Resources edit.
+
+
+## Approved homepage comparison — 25 September 2026
+
+The homepage uses a compact split hero followed immediately by four engagements. It preserves navy, ivory, amber, the approved SVG wordmark and existing system typography. The comparison repeats decision trigger, scope, TCI coverage, deliverable, indicative time and investment, with aligned actions. Use four columns above 1190px, two through tablet widths and one at 560px and below. Row heights are minimums, so zoom and font substitution can expand content.
+
+The homepage stylesheet and navigation script are separate from the recovered shared assets to preserve other public pages. Reuse the existing contact and service-fragment destinations. The native details element shows proposed engagement stages; keyboard focus, Escape, mobile focus containment and no-JavaScript navigation are supported. No motion library or remote font is introduced.
+
+Data & AI Confidence is dimension five. All seven dimensions can be examined at different depths; the AI review is a specialist route, not a mandatory service step. Follow-up review points remain explicitly proposed, and the self-assessment action opens the Services explanation while the available five-theme guide remains separately labelled.
+
+The production baseline was recovered from Vercel deployment dpl_B4gHof5bM1WPLVeLFe5HPR514zTt because its directly deployed source was newer than GitHub main. The recovered build fingerprints assets into dist/assets/versioned. Production metadata, structured data, service content and contact behaviour were retained.

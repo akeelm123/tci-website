@@ -31,3 +31,10 @@ Then visit `http://localhost:8080`.
 4. Review the current published newsletter links and thumbnails.
 
 The site uses plain HTML, CSS and JavaScript. No build step or third-party framework is required.
+
+
+## Production build
+
+Run `node scripts/build.mjs` to generate `dist/` with content-hashed static assets. Vercel uses this command and output directory. Preview `dist/` with a local static server. There are no package-manager dependencies, configured lint suite or unit-test runner. Syntax checks use `node --check assets/js/home.js` and `node --check assets/js/site.js`; browser checks cover navigation, disclosures, contact preselection, responsive reflow and accessibility.
+
+Home uses assets/css/home.css and assets/js/home.js; all other pages retain their shared stylesheet and script. Change source assets, never generated dist files.
