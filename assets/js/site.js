@@ -62,7 +62,7 @@ if (pulseForm) {
     event.preventDefault();
     const result = pulseForm.querySelector('[data-pulse-result]');
     result.querySelector('[data-pulse-score]').textContent = 'Discuss the evidence behind your ratings';
-    result.querySelector('[data-pulse-copy]').textContent = 'These ratings start a discussion. Compare the evidence behind each answer; they are not a formal TCI™ assessment or validated confidence score.';
+    result.querySelector('[data-pulse-copy]').textContent = 'These ratings start a discussion. Compare the evidence behind each answer; they are not a formal TCI assessment or validated confidence score.';
     result.classList.add('show');
     result.focus({ preventScroll: true });
     result.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'nearest' });
@@ -72,10 +72,10 @@ if (pulseForm) {
 const serviceContext = document.querySelector('[data-service-context]');
 if (serviceContext) {
   const serviceNames = {
-    'tci-self-assessment': 'TCI™ Self-Assessment',
-    'executive-diagnostic': 'TCI™ Executive Diagnostic',
-    'ai-review': 'AI Investment Confidence Review™',
-    'transformation-assessment': 'Transformation Confidence Assessment™',
+    'tci-self-assessment': 'TCI Self-Assessment',
+    'executive-diagnostic': 'TCI Executive Diagnostic',
+    'ai-review': 'AI Investment Confidence Review',
+    'transformation-assessment': 'Transformation Confidence Assessment',
     'executive-conversation': 'Transformation Confidence Executive Conversation',
     speaking: 'Speaking or executive session'
   };
