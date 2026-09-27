@@ -119,3 +119,10 @@ The homepage stylesheet and navigation script are separate from the recovered sh
 Data & AI Confidence is dimension five. All seven dimensions can be examined at different depths; the AI review is a specialist route, not a mandatory service step. Follow-up review points remain explicitly proposed, and the self-assessment action opens the Services explanation while the available five-theme guide remains separately labelled.
 
 The production baseline was recovered from Vercel deployment dpl_B4gHof5bM1WPLVeLFe5HPR514zTt because its directly deployed source was newer than GitHub main. The recovered build fingerprints assets into dist/assets/versioned. Production metadata, structured data, service content and contact behaviour were retained.
+
+
+## Customer-hook preview — 27 September 2026
+
+A short three-situation strip grounds the hero in funding, AI scaling and unproven benefits. The independence statement appears before the service comparison. A clearly labelled fictional executive report demonstrates the proposed output; no customer outcomes are claimed. The first conversation now explains the decision, evidence and scope it helps clarify. The five-theme discussion guide is directly downloadable without a form and remains distinct from the seven-dimension TCI self-assessment.
+
+The contact form has four visible fields. Existing service deep links still populate a hidden service-context field. It continues to prepare an email draft until a delivery service is configured; no false submission confirmation is shown. The new report reuses the homepage visual system and has a print layout.

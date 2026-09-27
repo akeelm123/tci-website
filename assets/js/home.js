@@ -22,8 +22,10 @@ document.addEventListener('keydown', event => {
 });
 window.matchMedia('(max-width:800px)').addEventListener('change', () => setMenu(false));
 const details = document.querySelector('#engagement-details');
-function openDetails() { if (location.hash === '#engagement-details') details.open = true; }
-document.querySelector('a[href="#engagement-details"]').addEventListener('click', () => { details.open = true; });
+function openDetails() { if (details && location.hash === '#engagement-details') details.open = true; }
+document.querySelector('a[href="#engagement-details"]')?.addEventListener('click', () => { details.open = true; });
 window.addEventListener('hashchange', openDetails);
 openDetails();
 document.querySelectorAll('[data-year]').forEach(node => { node.textContent = new Date().getFullYear(); });
+
+document.querySelector('.print-report')?.addEventListener('click', () => window.print());
