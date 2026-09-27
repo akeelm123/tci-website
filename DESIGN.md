@@ -126,3 +126,6 @@ The production baseline was recovered from Vercel deployment dpl_B4gHof5bM1WPLVe
 A short three-situation strip grounds the hero in funding, AI scaling and unproven benefits. The independence statement appears before the service comparison. A clearly labelled fictional executive report demonstrates the proposed output; no customer outcomes are claimed. The first conversation now explains the decision, evidence and scope it helps clarify. The five-theme discussion guide is directly downloadable without a form and remains distinct from the seven-dimension TCI self-assessment.
 
 The contact form has four visible fields. Existing service deep links still populate a hidden service-context field. It continues to prepare an email draft until a delivery service is configured; no false submission confirmation is shown. The new report reuses the homepage visual system and has a print layout.
+
+## Homepage simplification
+The free TCI Self-Assessment and the downloadable 21-question discussion guide are one resource, organised into five themes. Independent paid reviews use the full seven-dimension framework. Homepage stage planning and proposed 3/6/9/12-month follow-up offerings are internal planning concepts, omitted from customer-facing homepage copy. Detailed service scope remains on Services.
