@@ -2,6 +2,8 @@
 
 Branch: `rebrand/anlaq`. Production merge and promotion require explicit approval.
 
+[Open the Vercel preview](https://tci-website-fzdpyr5ao-akeelm-projects.vercel.app). Vercel reports Ready, target Preview. Deployed implementation commit: `6c9661fc84952b6a2bb405fd90397d6e9c4172b0`. Home, TCI, Services and About match the tested local build after excluding Vercel’s injected preview-feedback toolbar. The production homepage still presents Akeel Advisory. Full deployment evidence is in `deployment.json`.
+
 ## What changed
 
 - All 14 public HTML pages: ANLAQ header/footer, legal entity, metadata, social artwork, favicon and manifest references.
