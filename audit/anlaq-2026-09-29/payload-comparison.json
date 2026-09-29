@@ -1,0 +1,14 @@
+{
+  "baselineGzipBytes": {
+    "index.html": 5171,
+    "assets/css/styles.css": 9539,
+    "assets/js/site.js": 2103,
+    "header_logo": 428107
+  },
+  "rebrandGzipBytes": {
+    "index.html": 4235,
+    "assets/css/styles.css": 11126,
+    "assets/js/site.js": 2100,
+    "header_logo": 18256
+  }
+}

@@ -1,6 +1,6 @@
-# Akeel Advisory website
+# ANLAQ website
 
-A static website for Akeel Advisory. The Transformation Confidence Index™ is its advisory method.
+A static website for ANLAQ. The Transformation Confidence Index™ is its advisory method.
 
 ## Preview
 
@@ -34,6 +34,12 @@ The site uses plain HTML, CSS and JavaScript. No third-party framework or runtim
 
 ## Production build
 
-Run `node scripts/build.mjs` to create `dist/`. Vercel runs this command automatically. The build includes public pages and assets, excluding the audit reports and working documents. It gives CSS, JavaScript and supporting images content-hashed filenames under `assets/versioned/`; only those immutable URLs receive year-long browser caching. The logo is copied unchanged at its existing URL, and downloads keep stable links.
+Run `node scripts/build.mjs` to create `dist/`. Vercel runs this command automatically. The build includes public pages and assets, excluding the audit reports and working documents. It gives CSS, JavaScript and supporting images content-hashed filenames under `assets/versioned/`; only those immutable URLs receive year-long browser caching. Logo variants keep stable URLs, and downloads keep stable links.
 
 Preview the production output with `python3 -m http.server 8081 --directory dist`. After editing any source, rebuild before checking the production output.
+
+## ANLAQ review
+
+Run `node scripts/check.mjs` for brand, links, canonical URLs, schema, framework, service and JavaScript checks. There is no package install, framework linter, TypeScript compiler or existing unit-test suite: this is a dependency-free static site. Browser QA covers responsive layouts, automated accessibility, keyboard navigation and enquiry drafts.
+
+The rebrand is preview-only on `rebrand/anlaq`. The supplied logo artwork is raster despite its original SVG filename; use the faithful preview derivatives until a true vector source is supplied. See `audit/anlaq-2026-09-29/REVIEW.md` for evidence and release constraints.

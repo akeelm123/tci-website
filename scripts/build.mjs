@@ -32,7 +32,7 @@ for (const name of await readdir(root)) {
     let html = await readFile(path.join(root, name), 'utf8');
     for (const [source, destination] of replacements) html = html.replaceAll(source, destination);
     await writeFile(path.join(output, name), html);
-  } else if (['robots.txt', 'sitemap.xml', 'favicon.ico'].includes(name)) {
+  } else if (['robots.txt', 'sitemap.xml', 'favicon.ico', 'site.webmanifest'].includes(name)) {
     await cp(path.join(root, name), path.join(output, name));
   }
 }

@@ -101,7 +101,7 @@ if (contactForm) {
     event.preventDefault();
     if (!contactForm.reportValidity()) return;
     const fields = new FormData(contactForm);
-    const subject = `Akeel Advisory enquiry: ${fields.get('service')}`;
+    const subject = `ANLAQ enquiry: ${fields.get('service')}`;
     const body = [
       `Name: ${fields.get('name')}`,
       `Reply email: ${fields.get('email')}`,
