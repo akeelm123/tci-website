@@ -30,4 +30,10 @@ Then visit `http://localhost:8080`.
 3. Confirm analytics and privacy wording before launch.
 4. Review the current published newsletter links and thumbnails.
 
-The site uses plain HTML, CSS and JavaScript. No build step or third-party framework is required.
+The site uses plain HTML, CSS and JavaScript. No third-party framework or runtime dependency is required.
+
+## Production build
+
+Run `node scripts/build.mjs` to create `dist/`. Vercel runs this command automatically. The build includes public pages and assets, excluding the audit reports and working documents. It gives CSS, JavaScript and supporting images content-hashed filenames under `assets/versioned/`; only those immutable URLs receive year-long browser caching. The logo is copied unchanged at its existing URL, and downloads keep stable links.
+
+Preview the production output with `python3 -m http.server 8081 --directory dist`. After editing any source, rebuild before checking the production output.

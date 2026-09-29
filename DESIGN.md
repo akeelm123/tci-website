@@ -102,9 +102,113 @@ The Resources page replaces the planned **Guide** tile with **Technology readine
 | Medium | **Generic structure:** Home moves through a long status comparison and an Assess/Assure/Advise explanation before the four offers. | Keep the strongest status-to-confidence contrasts and bring the four-offer route earlier in the on-page reading path. Retain the existing direct Services navigation and mobile CTA. | At phone and desktop widths, the first service choice is easy to find without traversing multiple explanatory sections. |
 | Medium | **Offer clarity:** the collapsed Services rows state the question but do not consistently identify the free versus paid scope at a glance. | Label the free entry point, focused paid diagnostic, specialist AI review and full assessment in the collapsed state; avoid unvalidated duration or price claims. | Readers can choose a likely starting offer before expanding a row. |
 | Medium | **Typography and contrast:** several small uppercase labels carry important states, especially “Illustrative”, “Planned” and service boundaries. | Use normal reading-size text for meaningful status, reserve microtype for ornament, and review navy/amber/grey combinations on their real surfaces. | Critical status remains readable at 200% text zoom and meets WCAG contrast targets. |
-| Medium | **Performance and caching:** the 428 KB PNG logo accounts for most initial transfer on every page; static assets all require revalidation. | Export a compact header-size logo derivative while retaining the supplied master, then apply long-lived caching to versioned assets and keep HTML revalidating. | Cold page transfer drops materially, repeat visits reuse static assets, and the logo stays sharp at common display densities. |
+| Medium | **Caching:** static assets require revalidation in the recorded audit. | Apply long-lived caching to versioned assets and keep HTML revalidating. Logo changes are complete per Akeel’s 24 September update. | Repeat visits reuse static assets. |
 | Low | **SEO:** the five fictional scenario pages have identical descriptions, though titles and canonical URLs are unique. | Write a distinct, factual description for each scenario and consider verified Organization/Person schema if discoverability warrants it. | Each scenario has a unique search snippet; schema claims match published evidence. |
 | Low | **External link verification:** LinkedIn profile automation returned 999 while seven other LinkedIn destinations returned 200. | Check the profile in a normal signed-out browser as part of visual approval; keep the direct email route regardless. | A visitor can reach the profile, or the link is corrected if a human check shows a problem. |
 | No action | **Library weight:** no unnecessary third-party libraries were detected in the site bundle. | Keep the static HTML/CSS/JS approach for this scope. | Dependency count stays unchanged unless a new interaction truly requires one. |
 
 The Team's Editor challenged offer hierarchy, founder proof placement and status readability; the Fact-checker corrected stale audit assumptions about numeric scenario scores and missing metadata; the Writer recommended giving available resources priority over planned cards. The audit distinguishes current live behavior from earlier audit findings and from the local Resources edit.
+
+
+## Audit recommendations, 23 September 2026
+
+This is the current recommendation record. Earlier sections describe prior designs and checks; use the dated report below for the live state. These changes are proposed, not implemented or deployed.
+
+[Full audit and evidence](</Users/akeelmunshi/work/github repo/akeel-advisory/tci-website/WEBSITE-AUDIT-2026-09-23.md>)
+
+### Design direction
+
+Keep the existing navy, ivory and amber palette, serif display headings, local-font body stack and static implementation. The site's main job is to help a board member or executive identify the right review and contact Akeel with a specific investment decision. Make the adviser and supporting evidence visible before the method becomes detailed.
+
+Proposed homepage order: hero and adviser identity; confirmed career strip; four comparable offers; approved case or clearly labelled sample report; compact seven-stage decision sequence; contact. Keep detailed TCI dimensions on the TCI page.
+
+### Suggested changes
+
+| Priority | Area | Change | Acceptance |
+| --- | --- | --- | --- |
+| High | TCI card | Give the light “Connected evidence” card dark text. Current text and background are both `rgb(255, 253, 247)`. | Heading and paragraph are visible and meet text contrast at 390/1440px. |
+| High | About timeline | Give every `.timeline-item small` a light foreground in the dark section. Current contrast is about 1.1:1. | All four labels meet at least 4.5:1. |
+| High | Free assessment | Rename the Home action to “Open the introductory discussion guide” while it points to the five-theme guide. Use an enquiry label for the separate seven-dimension service until a matching start route is verified. | Visitors receive the product named by the link. |
+| High | Positioning | Use “I” for Akeel's work, “me” in enquiry prompts and a short personal introduction. Retain client-perspective “we” in quoted diagnostic questions. | Provider identity is consistent across Home, Services, About and Contact. |
+| High | Proof | Bring the published 30-year career claim and former Barclays, Standard Chartered and CGI roles onto Home after owner confirmation. Prepare one approved case and 2–3 supported outcomes. | Claims identify scope, time, evidence and Akeel's contribution. Former employers are not presented as clients or endorsers. |
+| High | Hero | Proposed H1: “Is your transformation delivering the value you funded?” Supporting copy: “I help boards and executive leaders examine the evidence before they commit more funding, change direction or reset a transformation.” | Audience, decision and next action are clear without knowing TCI. |
+| High | Service facts | Show the proposed comparison facts below on Home and in closed service summaries. | Time, output, fee basis and best-fit situation are visible without expanding a panel. |
+| Medium | Method | Keep the seven-stage decision sequence compact on Home. Move dimensions detail to TCI; reconcile “Data Confidence” and “Data & AI Confidence”. | One seven-part explanation on Home and consistent dimension names. |
+| Medium | Trademarks | Remove ™ from reading copy and keep the applicable attribution in the footer. | Marks appear only in footer notices; ownership wording remains accurate. |
+| Medium | Type and decoration | Keep serif/sans roles; enlarge meaningful status text, stack service facts on mobile and move the diagonal line away from hero copy. | Real 200% zoom, narrow-screen reading and keyboard focus checks pass. |
+| Medium | Performance | Use hashed asset URLs before immutable caching. | Repeat visits reuse versioned assets. |
+| Low | SEO and resources | Give each scenario a distinct description, improve Services/TCI titles, consider verified Person/Organization data and demote planned resources. | Search-facing descriptions and visible availability match the page. |
+
+### Proposed offer facts
+
+These are the owner's proposed terms, not verified existing delivery commitments. Akeel should confirm start conditions and scope before publication. The current five-theme guide must not inherit the seven-dimension product's promised output.
+
+| Service | Duration | Deliverable | Fee signal | Best for |
+| --- | --- | --- | --- | --- |
+| TCI Self-Assessment | 15–20 mins | Indicative confidence profile | Free | An initial health check |
+| TCI Executive Diagnostic | 2–3 weeks | Executive Confidence Diagnostic | Entry-level fixed fee | Concerns exist but the cause is unclear |
+| AI Investment Confidence Review | 3–5 weeks | AI Investment Confidence Report | Specialist fixed fee | Before further AI funding or scale |
+| Transformation Confidence Assessment | 5–7 weeks | Board/ExCo-ready Transformation Confidence Executive Report | Flagship engagement | Before a major funding, intervention or reset decision |
+
+### Verification record and limits
+
+All 14 live pages returned 200; 21 internal HTTP destinations and 20 fragment destinations passed. No document overflow was measured across six widths. Menu, service-panel, assessment and contact-draft probes passed. LinkedIn profile access returned 999 to automation and remains unverified for ordinary visitors.
+
+The 28 initial axe scans reported one desktop About contrast violation; visual inspection and computed colours found the invisible TCI card as well. Both are required repairs, regardless of automated scan results. No full WCAG conformance claim is made.
+
+No external library bundle was detected. Unthrottled browser LCP samples were fast, but PageSpeed returned 429. Real-user CWV, INP and Lighthouse scores remain unavailable. CDN cache hits coexist with browser revalidation; the caching recommendation concerns the browser policy for versioned files.
+
+The Team reviewed the proposed copy and corrected terminology and product-availability assumptions. The report and this addition were edited with anti-AI in reader mode. Skills inventory: [SKILLS-INVENTORY.md](</Users/akeelmunshi/work/github repo/akeel-advisory/tci-website/SKILLS-INVENTORY.md>).
+
+### Status update, 24 September 2026
+
+Akeel confirmed that the logo changes are complete. Logo replacement and size reduction are removed from the proposed work. Earlier measurements remain as dated audit evidence; the updated logo has not been remeasured in this revision.
+
+
+## Implementation, 24 September 2026
+
+The audit recommendations are implemented in the local website. The logo asset and its presentation remain unchanged. This section supersedes the earlier proposed-work tables for the items listed below.
+
+### Approved content
+
+Akeel approved the durations and fee descriptions for all four offers and chose **Data & AI Confidence** as the fifth dimension. His supplied biography replaces the earlier About introduction and supports the homepage experience strip: more than 30 years across technology consulting, enterprise architecture, global banking and transformation; senior global roles at Standard Chartered and Barclays; earlier consulting at CGI/Logica; and most recently leadership of Standard Chartered’s Global Data Platform strategy and evolution.
+
+The site uses first-person provider copy. No client case, testimonial or outcome statistic has been invented. The five teaching scenarios remain explicitly fictional.
+
+### Implemented changes
+
+- Home now leads with the investment question and Akeel's identity, followed by experience, comparable offers and the compact decision sequence. Detailed TCI dimensions live on the TCI page.
+- Home and the closed Services panels show duration, output, fee basis and best-fit situation. Repeated comparison and service-relationship sections were removed.
+- The free TCI offer uses an information/enquiry route. Its separate five-theme resource is labelled “introductory discussion guide”. No new assessment engine or automated confidence score is implied.
+- TCI’s light card has dark text. All About timeline labels have a light foreground. Meaningful status text and service facts are larger; the diagonal hero decoration no longer crosses copy.
+- Reading copy and dynamic labels omit trademark symbols; existing ownership attribution remains in the footer.
+- Headers share one navigation order. Contact displays the email address and retains the prepared-draft and copy-address routes.
+- Resources gives the two available tools priority and puts the planned guide in a short note. Newsletter covers were checked at source: the earlier blank captures were a lazy-loading capture issue, so no replacement artwork was needed.
+- Every fictional scenario has its own description. Services and TCI have descriptive titles. Home and About include basic Person/Organization data using published identity details.
+- A dependency-free build copies only public content into `dist/` and assigns content hashes to CSS, JavaScript and supporting images. Vercel configuration applies long-lived caching only to `/assets/versioned/`. The logo and downloads keep their existing URLs. Audit files are excluded from the build.
+
+### Remaining evidence
+
+Client outcomes, an approved client case, extra speaking-format commitments and genuine event evidence need source material before they can be added. Field Core Web Vitals and Search Console index coverage still require production data. The LinkedIn profile's HTTP 999 response does not establish whether ordinary visitors can open it. Browser-cache headers must be checked on Vercel after deployment.
+
+Local verification results are recorded in `audit/implementation-2026-09-24/`. No deployment has been performed as part of this implementation.
+
+### Local acceptance result
+
+The 24 September production-build checks passed: 14 pages, 41 internal URL checks, 28 initial accessibility scans and four expanded service-panel scans. No document overflow was measured at five widths. Keyboard and draft-email checks passed. Reflow was also emulated at the effective width of 200% desktop zoom; this was not a native browser zoom action. These results do not establish full WCAG conformance or field performance. See [verification record](</Users/akeelmunshi/work/github repo/akeel-advisory/tci-website/audit/implementation-2026-09-24/VERIFICATION.md>).
+
+## About page redesign, 24 September 2026
+
+The About page now uses Akeel’s expanded biography and supplied career results. An editorial introduction leads into four outcome measures, a consolidated career account, qualifications, working approach and the purpose of TCI. Repeated consulting history and the overlapping career timeline were removed. The page retains first-person copy and footer-only trademark attribution.
+
+The outcome measures retain their original qualifications: DevOps adoption from 15% to 95%, regression testing cycles shortened by up to 80%, delivery capacity increased by 53%, and infrastructure provisioning reduced from approximately 135 days to five days. Multi-million-dollar cost efficiencies appear separately. These are presented as career results; no employer, client, project or timeframe has been assigned to an individual result.
+
+The new qualifications section includes the MA in Digital Management from Teesside University and the supplied certification areas. No portrait, library or additional font was introduced. The existing logo is unchanged. The results grid becomes two columns at narrower widths and one column at the smallest width; the biography and qualifications stack on mobile.
+
+The earlier request for outcome source material is now partly resolved by the biography supplied for this update. A named or anonymised client case has not been supplied.
+
+Validation: the rebuilt About page passed checks at 320, 390, 768 and 1440 pixels with no horizontal overflow, automated WCAG A/AA violations or JavaScript errors. Both main calls to action returned HTTP 200. Desktop and mobile screenshots were visually reviewed. Evidence is saved in `audit/implementation-2026-09-24/about-refresh-checks.json` and the accompanying screenshots. These checks do not establish full WCAG conformance. The update is local and has not been deployed.
+
+## Production deployment, 24 September 2026
+
+All current website changes, including the About redesign, were deployed to https://akeel-advisory.vercel.app. Vercel deployment `dpl_B4gHof5bM1WPLVeLFe5HPR514zTt` is ready and assigned to the production domain. Live checks confirmed that all 14 HTML pages and 22 versioned assets returned HTTP 200 and matched the local build byte for byte. Versioned assets return `public, max-age=31536000, immutable`. Evidence: `audit/implementation-2026-09-24/production-checks.json`. This supersedes the earlier local-only deployment notes.
