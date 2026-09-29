@@ -849,3 +849,20 @@ h1, h2, h3, .page-title { font-family: var(--font-display); text-wrap: balance; 
  .anlaq-dimensions li { font-size: 16px; gap: 18px; }
  .home-package-comparison { padding-block: 42px; }
 }
+
+/* Retained illustrative executive report, adapted to shared ANLAQ tokens. */
+.report-page { padding-block: 55px; }
+.report-page h1 { font-size: clamp(38px, 4.5vw, 56px); max-width: 900px; margin: 20px 0; }
+.report-page .lead { max-width: 800px; color: var(--ink-soft); }
+.report-page .fiction { padding: 18px 22px; border: 1px solid var(--line); background: var(--paper-deep); font-size: 14px; margin-bottom: 30px; }
+.report-section { padding-block: 28px; border-top: 1px solid var(--line); }
+.report-section h2 { font-size: 32px; margin-bottom: 18px; }
+.report-section p { max-width: 900px; margin-bottom: 14px; }
+.report-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.report-table th, .report-table td { text-align: left; padding: 14px 16px; vertical-align: top; border-bottom: 1px solid var(--line); }
+.report-table th { background: var(--paper-deep); }
+.report-table td:first-child { width: 26%; font-weight: 600; }
+.report-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin: 30px 0; }
+.report-page li { margin-bottom: 10px; }
+@media(max-width:560px) { .report-page { padding-block: 32px; } .report-table { font-size: 13px; overflow-wrap: anywhere; } .report-table th, .report-table td { padding: 10px 7px; } }
+@media print { .site-header, .site-footer, .report-actions, .skip-link { display: none !important; } .report-page { width: 100%; padding: 0; } .report-page h1 { font-size: 30pt; } .report-section { break-inside: avoid; } .report-table tr { break-inside: avoid; } }
