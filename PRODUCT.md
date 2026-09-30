@@ -20,7 +20,7 @@ User-approved implementation brief: ANLAQ is the master brand; ANLAQ Advisory Pt
 
 ## Evidence on Hand
 
-The supplied logo is a PNG incorrectly named .svg. The user explicitly approved faithful raster artwork for the preview, with true vector assets pending. The previous site contains approved biography and career results. Preserve personal attribution and historical publication artwork. Do not attach results to specific clients or invent evidence.
+The v2 request supplies approved production SVGs and a locked Modern & Refined brand system. Copy these without modification. The earlier raster files are retained only for rollback. The previous site contains approved biography and career results. Preserve personal attribution and historical publication artwork. Do not attach results to specific clients or invent evidence.
 
 ## Release Constraint
 

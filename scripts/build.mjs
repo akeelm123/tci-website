@@ -10,23 +10,33 @@ await mkdir(path.join(output, 'assets', 'versioned'), { recursive: true });
 await cp(path.join(root, 'assets'), path.join(output, 'assets'), { recursive: true });
 
 const replacements = new Map();
-async function versionAssets(directory) {
+const assetPaths = [];
+async function collectAssets(directory) {
   for (const entry of await readdir(path.join(root, directory), { withFileTypes: true })) {
     const relative = `${directory}/${entry.name}`;
     if (entry.isDirectory()) {
-      if (entry.name !== 'downloads') await versionAssets(relative);
-    } else if (/\.(css|js|webp|png|svg|avif)$/i.test(entry.name) && !entry.name.includes('logo')) {
-      const content = await readFile(path.join(root, relative));
-      const hash = createHash('sha256').update(content).digest('hex').slice(0, 16);
-      const extension = path.extname(entry.name);
-      const name = `${path.basename(entry.name, extension)}.${hash}${extension}`;
-      const destination = `assets/versioned/${name}`;
-      await writeFile(path.join(output, destination), content);
-      replacements.set(relative, destination);
+      if (entry.name !== 'downloads') await collectAssets(relative);
+    } else if (/\.(css|js|webp|png|svg|avif|woff2)$/i.test(entry.name) && !entry.name.includes('logo')) {
+      assetPaths.push(relative);
     }
   }
 }
-await versionAssets('assets');
+await collectAssets('assets');
+// Version dependencies before CSS, then hash the rewritten CSS content.
+assetPaths.sort((a, b) => Number(a.endsWith('.css')) - Number(b.endsWith('.css')));
+for (const relative of assetPaths) {
+  let content = await readFile(path.join(root, relative));
+  if (relative.endsWith('.css')) {
+    let css = content.toString('utf8');
+    for (const [source, destination] of replacements) css = css.replaceAll(source, destination);
+    content = Buffer.from(css);
+  }
+  const hash = createHash('sha256').update(content).digest('hex').slice(0, 16);
+  const extension = path.extname(relative);
+  const destination = `assets/versioned/${path.basename(relative, extension)}.${hash}${extension}`;
+  await writeFile(path.join(output, destination), content);
+  replacements.set(relative, destination);
+}
 for (const name of await readdir(root)) {
   if (name.endsWith('.html')) {
     let html = await readFile(path.join(root, name), 'utf8');

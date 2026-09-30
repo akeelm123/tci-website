@@ -1,0 +1,32 @@
+[
+  {
+    "file": "anlaq-primary.svg",
+    "sha256": "91432283fa8023a7ae0bd5b31be322d2884197d687d96c55b56157acb495afc2",
+    "identicalToSupplied": true
+  },
+  {
+    "file": "anlaq-monochrome-dark.svg",
+    "sha256": "1d6bc741334ef64b6aa35ef6343830a72e54692f3a70a5b21e0efae3c32d239c",
+    "identicalToSupplied": true
+  },
+  {
+    "file": "anlaq-monochrome-light.svg",
+    "sha256": "81b18fb9acbdbc65cf7bb741e26beaeb4991cbb393cfb18e8cb42708a12575b2",
+    "identicalToSupplied": true
+  },
+  {
+    "file": "anlaq-q-mark.svg",
+    "sha256": "23a1f2f88bb405bbd21560105ff46d9665f63925185d0225fae567e862484ccb",
+    "identicalToSupplied": true
+  },
+  {
+    "file": "favicon.svg",
+    "sha256": "23a1f2f88bb405bbd21560105ff46d9665f63925185d0225fae567e862484ccb",
+    "identicalToSupplied": true
+  },
+  {
+    "file": "ANLAQ-Brand-System-v1.md",
+    "sha256": "261f41e68a4928bea5874a669894861e958e7d47956199455e492d3746f0c268",
+    "identicalToSupplied": true
+  }
+]
