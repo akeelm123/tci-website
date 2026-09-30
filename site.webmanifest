@@ -8,19 +8,19 @@
   "theme_color": "#0F2744",
   "icons": [
     {
-      "src": "/assets/brand/anlaq/anlaq-q-mark.svg",
+      "src": "/assets/brand/anlaq-vector-v1/favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
     },
     {
-      "src": "/assets/brand/anlaq/q-192.png",
+      "src": "/assets/brand/anlaq-vector-v1/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/assets/brand/anlaq/q-512.png",
+      "src": "/assets/brand/anlaq-vector-v1/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"

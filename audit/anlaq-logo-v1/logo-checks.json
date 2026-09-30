@@ -1,0 +1,245 @@
+{
+  "results": [
+    {
+      "name": "index",
+      "width": 375,
+      "logos": [
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-primary-no-descriptor.ed217678e7e34b41.svg",
+          "width": 180,
+          "height": 46,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        },
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-reversed-no-descriptor.c55f644b7085fab9.svg",
+          "width": 248,
+          "height": 64,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        }
+      ]
+    },
+    {
+      "name": "services",
+      "width": 375,
+      "logos": [
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-primary-no-descriptor.ed217678e7e34b41.svg",
+          "width": 180,
+          "height": 46,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        },
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-reversed-no-descriptor.c55f644b7085fab9.svg",
+          "width": 248,
+          "height": 64,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        }
+      ]
+    },
+    {
+      "name": "tci",
+      "width": 375,
+      "logos": [
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-primary-no-descriptor.ed217678e7e34b41.svg",
+          "width": 180,
+          "height": 46,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        },
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-reversed-no-descriptor.c55f644b7085fab9.svg",
+          "width": 248,
+          "height": 64,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        }
+      ]
+    },
+    {
+      "name": "about",
+      "width": 375,
+      "logos": [
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-primary-no-descriptor.ed217678e7e34b41.svg",
+          "width": 180,
+          "height": 46,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        },
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-reversed-no-descriptor.c55f644b7085fab9.svg",
+          "width": 248,
+          "height": 64,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        }
+      ]
+    },
+    {
+      "name": "index",
+      "width": 768,
+      "logos": [
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-primary-no-descriptor.ed217678e7e34b41.svg",
+          "width": 220,
+          "height": 57,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        },
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-reversed-no-descriptor.c55f644b7085fab9.svg",
+          "width": 215,
+          "height": 55,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        }
+      ]
+    },
+    {
+      "name": "services",
+      "width": 768,
+      "logos": [
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-primary-no-descriptor.ed217678e7e34b41.svg",
+          "width": 220,
+          "height": 57,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        },
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-reversed-no-descriptor.c55f644b7085fab9.svg",
+          "width": 215,
+          "height": 55,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        }
+      ]
+    },
+    {
+      "name": "tci",
+      "width": 768,
+      "logos": [
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-primary-no-descriptor.ed217678e7e34b41.svg",
+          "width": 220,
+          "height": 57,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        },
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-reversed-no-descriptor.c55f644b7085fab9.svg",
+          "width": 215,
+          "height": 55,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        }
+      ]
+    },
+    {
+      "name": "about",
+      "width": 768,
+      "logos": [
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-primary-no-descriptor.ed217678e7e34b41.svg",
+          "width": 220,
+          "height": 57,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        },
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-reversed-no-descriptor.c55f644b7085fab9.svg",
+          "width": 215,
+          "height": 55,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        }
+      ]
+    },
+    {
+      "name": "index",
+      "width": 1440,
+      "logos": [
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-primary-no-descriptor.ed217678e7e34b41.svg",
+          "width": 220,
+          "height": 57,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        },
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-reversed-no-descriptor.c55f644b7085fab9.svg",
+          "width": 260,
+          "height": 67,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        }
+      ]
+    },
+    {
+      "name": "services",
+      "width": 1440,
+      "logos": [
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-primary-no-descriptor.ed217678e7e34b41.svg",
+          "width": 220,
+          "height": 57,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        },
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-reversed-no-descriptor.c55f644b7085fab9.svg",
+          "width": 260,
+          "height": 67,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        }
+      ]
+    },
+    {
+      "name": "tci",
+      "width": 1440,
+      "logos": [
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-primary-no-descriptor.ed217678e7e34b41.svg",
+          "width": 220,
+          "height": 57,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        },
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-reversed-no-descriptor.c55f644b7085fab9.svg",
+          "width": 260,
+          "height": 67,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        }
+      ]
+    },
+    {
+      "name": "about",
+      "width": 1440,
+      "logos": [
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-primary-no-descriptor.ed217678e7e34b41.svg",
+          "width": 220,
+          "height": 57,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        },
+        {
+          "src": "http://127.0.0.1:8081/assets/versioned/anlaq-reversed-no-descriptor.c55f644b7085fab9.svg",
+          "width": 260,
+          "height": 67,
+          "ratio": 3.8779661016949154,
+          "label": "ANLAQ home"
+        }
+      ]
+    }
+  ],
+  "icons": "All favicon and manifest paths return success"
+}
