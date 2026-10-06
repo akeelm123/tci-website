@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="82" viewBox="0 0 400 82" role="img" aria-label="ANLAQ">
+  <title>ANLAQ</title>
+  <path fill="#FFFFFF" d="M30 25 L30 33 L16 40 L16 58 L30 65 L30 73 L8 62 L8 36 Z"/>
+  <path fill="#FFFFFF" d="M34 9 L56 20 L56 46 L34 57 L34 49 L48 42 L48 24 L34 17 Z"/>
+  <path fill="#FFFFFF" d="M82 66 L107 12 H112 L137 66 H129 L109 23 L86 66 Z M95 45 H123 L125 49 H93 Z"/>
+  <path fill="#FFFFFF" d="M151 66 V12 H158 L195 55 V12 H199 V66 H192 L155 23 V66 Z"/>
+  <path fill="#FFFFFF" d="M214 12 H221 V62 H249 V66 H214 Z"/>
+  <path fill="#FFFFFF" d="M258 66 L283 12 H288 L313 66 H305 L285 23 L262 66 Z M271 45 H299 L301 49 H269 Z"/>
+  <ellipse cx="353" cy="39" rx="26" ry="27" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+  <path fill="#FFFFFF" d="M346 48 C357 51 369 61 387 64 L386 68 C367 65 356 57 346 48 Z"/>
+</svg>

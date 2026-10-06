@@ -42,4 +42,4 @@ Preview the production output with `python3 -m http.server 8081 --directory dist
 
 Run `node scripts/check.mjs` for brand, links, canonical URLs, schema, framework, service and JavaScript checks. There is no package install, framework linter, TypeScript compiler or existing unit-test suite: this is a dependency-free static site. Browser QA covers responsive layouts, automated accessibility, keyboard navigation and enquiry drafts.
 
-The rebrand is preview-only on `rebrand/anlaq`. The supplied logo artwork is raster despite its original SVG filename; use the faithful preview derivatives until a true vector source is supplied. See `audit/anlaq-2026-09-29/REVIEW.md` for evidence and release constraints.
+The logo refinement is prepared on `refine/anlaq-logo`. Header and footer artwork is consistent across all public pages, with separate full, monochrome and symbol versions. See `LOGO-GUIDELINES.md` for assets, colour, clear space and minimum size rules. Earlier artwork remains available for rollback.

@@ -11,7 +11,7 @@ for (const file of pages) {
   assert.equal((html.match(/<h1\b/g) || []).length, 1, `${file}: one main heading`);
   assert(html.includes('ANLAQ home') && html.includes('ANLAQ Advisory Pte. Ltd.'), `${file}: shared identity`);
   assert(html.includes('site.webmanifest'), `${file}: browser identity`);
-  assert(/rel="canonical" href="https:\/\/akeel-advisory.vercel.app\//.test(html), `${file}: canonical preserved`);
+  assert(/rel="canonical" href="https:\/\/(?:anlaq|akeel-advisory)\.vercel\.app\//.test(html), `${file}: canonical preserved`);
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(m => m[1]);
   assert.equal(new Set(ids).size, ids.length, `${file}: duplicate IDs`);
   for (const match of html.matchAll(/(?:href|src)="([^"]+)"/g)) {

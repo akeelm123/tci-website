@@ -799,10 +799,10 @@ input[type="range"] { width: 100%; accent-color: var(--teal); }
 /* ANLAQ Modern & Refined. The existing system serif and sans avoid font downloads. */
 body { font-family: var(--font-body); }
 h1, h2, h3, .page-title { font-family: var(--font-display); text-wrap: balance; }
-.brand { flex-direction: column; align-items: flex-start; gap: 5px; padding-block: 12px; }
-.anlaq-logo { width: 174px; height: auto; mix-blend-mode: multiply; }
+.brand { flex-direction: row; align-items: center; padding-block: 12px; }
+.anlaq-logo { width: 245px; height: auto; }
 .brand-descriptor { font-size: 9px; letter-spacing: .065em; color: var(--ink); }
-.anlaq-logo-reversed { width: 230px; height: auto; mix-blend-mode: screen; }
+.anlaq-logo-reversed { width: 260px; max-width: 100%; height: auto; }
 .footer-brand .footer-descriptor { font-size: 12px; margin-top: 12px; }
 .footer-brand .footer-legal { margin-top: 24px; font-size: 13px; color: var(--aqua); }
 .site-nav a:hover, .site-nav a[aria-current="page"] { background: var(--paper-deep); }
@@ -843,7 +843,7 @@ h1, h2, h3, .page-title { font-family: var(--font-display); text-wrap: balance; 
  .anlaq-framework h2 { max-width: 28ch; }
 }
 @media (max-width: 560px) {
- .anlaq-logo { width: 155px; }
+ .anlaq-logo { width: 195px; }
  .brand-descriptor { font-size: 8px; }
  .anlaq-hero { padding-block: 48px; }
  .anlaq-hero h1 { font-size: clamp(40px, 11vw, 54px); }

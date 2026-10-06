@@ -8,13 +8,13 @@
   "theme_color": "#0F2744",
   "icons": [
     {
-      "src": "/assets/images/anlaq/q-192.png",
+      "src": "/assets/images/anlaq/symbol-refined-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/assets/images/anlaq/q-512.png",
+      "src": "/assets/images/anlaq/symbol-refined-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
