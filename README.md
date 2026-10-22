@@ -43,3 +43,7 @@ Preview the production output with `python3 -m http.server 8081 --directory dist
 Run `node scripts/check.mjs` for brand, links, canonical URLs, schema, framework, service and JavaScript checks. There is no package install, framework linter, TypeScript compiler or existing unit-test suite: this is a dependency-free static site. Browser QA covers responsive layouts, automated accessibility, keyboard navigation and enquiry drafts.
 
 The logo refinement is prepared on `refine/anlaq-logo`. Header and footer artwork is consistent across all public pages, with separate full, monochrome and symbol versions. See `LOGO-GUIDELINES.md` for assets, colour, clear space and minimum size rules. Earlier artwork remains available for rollback.
+
+## Approved logo
+
+The current website uses the approved serif artwork in `assets/brand/anlaq-vector-v1/`. See `LOGO-GUIDELINES.md`. Superseded sans-serif refinement assets have been removed; their history remains in Git.
