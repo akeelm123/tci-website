@@ -2,6 +2,8 @@
 
 A static website for ANLAQ. The Transformation Confidence Index™ is its advisory method.
 
+On `codex/anlaq-homepage-preview`, see `PREVIEW-NOTES.md` for the complete Clearer View homepage, AQ identity, copy-preservation notes and review instructions. The user has approved pushing this review branch for a branch preview. Opening a pull request, merging and publishing to production still require explicit approval.
+
 ## Preview
 
 Open `index.html` in a browser, or run a local server from this folder:

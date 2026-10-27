@@ -86,6 +86,19 @@ if (serviceContext) {
     const serviceSelect = document.querySelector('#contact-service');
     if (serviceSelect) serviceSelect.value = selected;
   }
+  const decisionPrompts = {
+    fund: 'Is the case strong enough to commit or release further investment?',
+    continue: 'Does the evidence support staying the course?',
+    change: 'Where should leadership intervene, simplify or redirect?',
+    reset: 'What needs to change before confidence can be restored?'
+  };
+  const decision = new URLSearchParams(window.location.search).get('decision');
+  if (!selected && Object.hasOwn(decisionPrompts, decision)) {
+    serviceContext.textContent = `Your decision: ${decisionPrompts[decision]}`;
+    serviceContext.hidden = false;
+    const message = document.querySelector('[data-contact-form] textarea[name="message"]');
+    if (message && !message.value) message.value = decisionPrompts[decision] + '\n\n';
+  }
 }
 
 const openServiceDeepLink = () => {

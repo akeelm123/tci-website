@@ -1,5 +1,11 @@
 # ANLAQ website design system
 
+## Local Clearer View preview
+
+The `codex/anlaq-homepage-preview` branch implements the user's selected full-page concept in `index.html`, with homepage-scoped `assets/css/clarity.css` and `assets/js/clarity.js`. Ink `#13263A`, ivory `#F6F4EE` and restrained brass `#B09B69` extend the existing palette. It retains the system font stacks, existing URLs, exact paragraph and outcome copy, all four packages, seven dimensions and the contact email-draft behaviour. The AQ assets are in `assets/brand/anlaq-aq-v1/`. See `PREVIEW-NOTES.md` for the complete review record. Pushing, PR creation and publishing require explicit user approval.
+
+The baseline production design record below is retained for context and rollback.
+
 ## Approved direction
 
 ANLAQ Concept 1, Modern & Refined, from the user's implementation brief. Executive, understated and editorial, with generous whitespace. The approved identity takes precedence over generic design-skill concept selection. The previous design record is retained in `audit/anlaq-2026-09-29/DESIGN-before-rebrand.md`.
