@@ -1,8 +1,9 @@
 /* Shared navigation and the local Services journey. */
 body { --paper: #f6f4ee; --ink: #13263a; --ink-soft: #465565; --gold: #b79a57; }
 .site-header { background: var(--paper); }
+.site-header .brand { padding-block: 0; }
 .nav-wrap { width: min(calc(100% - 112px), 1320px); min-height: 94px; }
-.brand .anlaq-logo { width: 238px; height: 56px; object-fit: contain; }
+.brand .anlaq-logo { width: 286px; height: 100px; object-fit: contain; mix-blend-mode: darken; }
 .site-nav { gap: 14px; }
 .site-nav a { color: var(--ink); font-size: 13px; font-weight: 500; border-radius: 0; }
 .site-nav a:hover, .site-nav a[aria-current=page] { background: transparent; text-decoration: underline; text-decoration-color: #a18b56; text-underline-offset: 7px; }
@@ -10,7 +11,8 @@ body { --paper: #f6f4ee; --ink: #13263a; --ink-soft: #465565; --gold: #b79a57; }
 .site-footer { background: var(--paper); color: var(--ink); padding: 48px 0 25px; }
 .site-footer .container { width: min(calc(100% - 112px), 1320px); }
 .footer-grid { grid-template-columns: 1.5fr .6fr .75fr; gap: 70px; }
-.footer-brand img { width: 200px; height: auto; margin-bottom: 14px; }
+.footer-brand img { width: 286px; height: auto; margin-bottom: 14px; }
+.footer-brand img { mix-blend-mode: darken; }
 .footer-brand p { color: var(--ink-soft); margin: 3px 0; font-size: 12px; }
 .site-footer .footer-brand .footer-legal { color: #465565; }
 .footer-nav { gap: 7px; }
@@ -100,7 +102,7 @@ body { --paper: #f6f4ee; --ink: #13263a; --ink-soft: #465565; --gold: #b79a57; }
 .journey .section.j-reassurance { padding-block: 44px; }
 .j-reassurance p { font-size: 15px; line-height: 1.7; }
 .j-close { background: #13263a; color: #f6f4ee; position: relative; isolation: isolate; overflow: hidden; padding-block: 62px; }
-.j-close::after { content: ''; position: absolute; inset: 12% 2% 0 auto; width: 35%; z-index: -1; opacity: .1; background: url('../brand/anlaq-aq-v1/aq-symbol-light.svg') right center / contain no-repeat; }
+.j-close::after { content: ''; position: absolute; inset: 12% 2% 0 auto; width: 35%; z-index: -1; opacity: .1; background: url('../brand/anlaq-vector-v1/anlaq-symbol-light.svg') right center / contain no-repeat; }
 .j-close h2 { color: #f6f4ee; max-width: 22ch; }
 .j-close h2::before { content: ''; display: block; width: 65px; height: 1px; background: #b79a57; margin-bottom: 26px; }
 .j-close p { max-width: 65ch; color: #d6dbdd; font-size: 14px; }
@@ -192,7 +194,7 @@ body { --paper: #f6f4ee; --ink: #13263a; --ink-soft: #465565; --gold: #b79a57; }
   .site-nav { top: 80px; }
   .nav-wrap, .journey .container, .site-footer .container { width: calc(100% - 48px); }
   .nav-wrap { min-height: 80px; }
-  .brand .anlaq-logo { width: 190px; height: 45px; }
+  .brand .anlaq-logo { width: 222px; height: 78px; }
   .journey .section { padding-block: 55px; }
   .j-hero { padding-block: 55px; }
   .j-services-hero .hero-copy { width: 100%; max-width: 650px; }

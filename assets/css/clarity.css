@@ -17,7 +17,7 @@
 .home-clarity a, .home-clarity button, .home-clarity summary { -webkit-tap-highlight-color: transparent; }
 .home-clarity :focus-visible { outline: 3px solid #92783d; outline-offset: 5px; }
 .home-clarity .nav-wrap { width: min(calc(100% - 112px), var(--max)); min-height: 94px; }
-.home-clarity .brand .anlaq-logo { width: 238px; height: 56px; object-fit: contain; }
+.home-clarity .brand .anlaq-logo { width: 286px; height: 100px; object-fit: contain; mix-blend-mode: darken; }
 .home-clarity .site-nav { gap: 14px; }
 .home-clarity .site-nav a { font-size: 13px; font-weight: 500; color: var(--ink); border-radius: 0; }
 .home-clarity .site-nav a:hover { background: transparent; text-decoration: underline; text-underline-offset: 6px; }
@@ -123,13 +123,13 @@
 .clarity-resource .guide-meta { margin: 20px 0; font-size: 12px; }
 .clarity-resource .guide-meta span { padding-inline: 10px; color: #786333; }
 .clarity-close { position: relative; isolation: isolate; overflow: hidden; padding-block: 82px; color: var(--paper); background: var(--ink); }
-.clarity-close::after { content: ''; position: absolute; z-index: -1; right: 2%; bottom: -15%; width: 35%; height: 120%; background: url('../brand/anlaq-aq-v1/aq-symbol-light.svg') 100% 50% / contain no-repeat; opacity: .12; }
+.clarity-close::after { content: ''; position: absolute; z-index: -1; right: 2%; bottom: -15%; width: 35%; height: 120%; background: url('../brand/anlaq-vector-v1/anlaq-symbol-light.svg') 100% 50% / contain no-repeat; opacity: .12; }
 .clarity-close h2 { max-width: 20ch; color: var(--paper); font-size: clamp(40px, 4.5vw, 64px); }
 .clarity-close h2::before { content: ''; display: block; width: 58px; height: 1px; margin-bottom: 25px; background: #b09b69; }
 .clarity-close p { max-width: 68ch; margin: 20px 0 25px; color: #d6dbdd; font-size: 15px; }
 .home-clarity .site-footer { padding: 42px 0 25px; border: 0; color: var(--ink); background: var(--paper); }
 .home-clarity .footer-grid { grid-template-columns: 1.5fr .6fr .75fr; gap: 70px; }
-.home-clarity .footer-brand img { width: 200px; height: auto; margin-bottom: 14px; }
+.home-clarity .footer-brand img { width: 286px; height: auto; margin-bottom: 14px; }
 .home-clarity .footer-brand p { margin: 3px 0; max-width: 40ch; color: var(--ink-soft); font-size: 12px; }
 .home-clarity .footer-brand .footer-descriptor { font-size: 10px; letter-spacing: .07em; }
 .home-clarity .footer-nav { gap: 7px; padding-top: 8px; }
@@ -153,7 +153,7 @@
 @media (max-width: 800px) {
   .home-clarity .container, .home-clarity .nav-wrap { width: calc(100% - 48px); }
   .home-clarity .nav-wrap { min-height: 80px; }
-  .home-clarity .brand .anlaq-logo { width: 190px; height: 45px; }
+  .home-clarity .brand .anlaq-logo { width: 222px; height: 78px; }
   .clarity-hero .container { display: block; min-height: 0; padding-bottom: 300px; }
   .clarity-hero-copy { width: 100%; max-width: 600px; padding: 56px 0 30px; }
   .clarity-hero h1 { font-size: clamp(62px, 10vw, 90px); }
@@ -185,7 +185,7 @@
   .clarity-resource { padding-block: 50px; }
   .clarity-close { padding-block: 60px; }
   .home-clarity .footer-grid { grid-template-columns: 1.5fr 1fr 1fr; gap: 28px; }
-  .home-clarity .footer-brand img { width: 170px; }
+  .home-clarity .footer-brand img { width: 240px; }
 }
 @media (max-width: 520px) {
   .home-clarity .container, .home-clarity .nav-wrap { width: calc(100% - 40px); }

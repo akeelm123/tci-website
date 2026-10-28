@@ -1,3 +1,9 @@
+# Current website logo — 28 October 2026
+
+The owner requested the geometric navy-and-gold symbol with the sans-serif ANLAQ wordmark and gold Q sweep. The exact supplied PNG is retained unmodified at `assets/brand/anlaq-original/anlaq-restored.png` (1061 × 371). Use this artwork with its original proportions. Do not substitute either serif interpretation below. On ivory surfaces, CSS darken blending removes the visible light background edge without changing the source artwork. The existing geometric-symbol browser icons in `assets/brand/anlaq-vector-v1/` match this restored symbol. Historical AQ and serif files remain available for reference.
+
+---
+
 # ANLAQ logo — local preview and existing identity
 
 ## Local AQ preview

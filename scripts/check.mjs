@@ -10,7 +10,7 @@ for (const file of pages) {
   assert(!/Akeel Advisory|AKEEL ADVISORY|akeel-advisory-(?:logo|social)/.test(html), `${file}: obsolete brand`);
   assert.equal((html.match(/<h1\b/g) || []).length, 1, `${file}: one main heading`);
   assert(html.includes('ANLAQ home') && html.includes('ANLAQ Advisory Pte. Ltd.'), `${file}: shared identity`);
-  assert(!html.includes('logo-refined') && html.includes('anlaq-aq-v1/anlaq-primary-no-descriptor.svg'), `${file}: AQ serif identity`);
+  assert(!html.includes('logo-refined') && html.includes('anlaq-original/anlaq-restored.png'), `${file}: approved supplied identity`);
   assert(html.includes('site.webmanifest'), `${file}: browser identity`);
   assert(/rel="canonical" href="https:\/\/(?:anlaq|akeel-advisory)\.vercel\.app\//.test(html), `${file}: canonical preserved`);
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(m => m[1]);
